@@ -51,3 +51,5 @@ GET
 http://localhost:8080/admin/get?account=abc123
 Postman에서 'Authorization - Type - BearerToken을 선택하고 로그인을 했을 때 발급받은 토큰값을 넣어준다.
 ---> 토큰을 넣고 접속하면 '권한이 없는 사용자입니다."라는 값이 리턴 된다
+
+테스트 완료
