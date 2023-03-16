@@ -19,6 +19,12 @@ public class SignController {
     public ResponseEntity<SignResponse> login(@RequestBody SignRequest request) throws Exception {
         return new ResponseEntity<>(memberService.login(request), HttpStatus.OK);
     }
+    
+//    @PostMapping(value = "/register")
+//    public String test(@RequestBody SignRequest request) throws Exception {
+//    	
+//        return "OK";
+//    }
 
     @PostMapping(value = "/register")
     public ResponseEntity<Boolean> signup(@RequestBody SignRequest request) throws Exception {
@@ -35,8 +41,8 @@ public class SignController {
         return new ResponseEntity<>( memberService.getMember(account), HttpStatus.OK);
     }
 
-    @GetMapping("/refresh")
-    public ResponseEntity<TokenDto> refresh(@RequestBody TokenDto token) throws Exception {
-        return new ResponseEntity<>( memberService.refreshAccessToken(token), HttpStatus.OK);
-    }
+//    @GetMapping("/refresh")
+//    public ResponseEntity<TokenDto> refresh(@RequestBody TokenDto token) throws Exception {
+//        return new ResponseEntity<>( memberService.refreshAccessToken(token), HttpStatus.OK);
+//    }
 }
